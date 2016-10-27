@@ -1,0 +1,29 @@
+.images
+{
+	float:left;
+	width: 50%;
+	margin-left: 10px;
+}
+.content
+{
+	float:right;
+	color: white;
+	width:48%;
+	height: 100%;
+	margin-right:10px;
+}
+#nextbutton
+{
+	right: 0;
+	bottom: 50%;
+	position: fixed;
+	padding: 100px 5px;
+}
+
+#prevbutton
+{
+	left: 0;
+	bottom: 50%;
+	position: fixed;
+	padding: 100px 5px;
+}

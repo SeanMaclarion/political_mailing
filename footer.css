@@ -1,0 +1,33 @@
+.links
+{
+	list-style-type: none;
+
+ display: inline-block;
+	vertical-align: top;
+	margin: 0;
+	padding: 0px;
+
+}
+
+.links2
+{
+	padding-left: 50px;
+	padding-right: 50px;
+	list-style-type: none;
+	vertical-align: top;
+	display: list-item;
+	margin: 0;
+}
+
+body
+{
+ margin: 8;
+}
+.footer
+{
+	float:left;
+   position:static;
+   bottom:0;
+   width:100%;
+   margin-top: 500px;;
+}

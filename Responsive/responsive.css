@@ -1,0 +1,98 @@
+.header
+{
+	width: 100%;
+	height: 10%;
+	background-color: red;
+}
+.logo
+{
+	width: 30%;
+	height: 100%;
+	background-color: blue;
+	float:left;
+}
+.links
+{
+	width: 40%;
+	height: 100%;
+	background-color: green;
+	float: right;
+}
+.blog
+{
+	width:80%;
+	height:auto;
+	float:left;
+}
+.sidebar
+{
+	width:20%;
+	height:80%;
+	float: right;
+	background-color:pink;
+}
+.footer
+{
+	 position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+	width: 100%;
+	height: 10%;
+	background-color: red;
+}
+.links2
+{
+	width: 30%;
+	height: 100%;
+	background-color: blue;
+	float:left;
+}
+.newsletter
+{
+	width: 40%;
+	height: 100%;
+	background-color: green;
+	float: right;
+}
+.blog1, .blog2
+{
+	width:50%;
+	height:100%;
+}
+.blog1
+{
+	float:left;
+	background-color:yellow;
+		
+}
+.blog2
+{
+	float:right;
+	background-color:purple;
+}
+
+@media only screen and (min-width: 768px)
+{
+	
+}
+
+@media only screen and (max-width: 767px)
+{
+	.blog1, .blog2
+	{
+		float:left;
+		height:50%;
+		width: 100%;
+	}
+	
+	.blog
+{
+	width:80%;
+	height:80%;
+	float:left;
+}
+.links
+{
+	
+}

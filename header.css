@@ -1,0 +1,182 @@
+a:link
+{
+	text-decoration:none;
+	color: #000066;
+}
+a:visited
+{
+	color: black;
+}
+a:hover
+{
+	color: red;
+}
+
+.headernavbar
+{
+	list-style-type: none;
+
+ display: inline-block;
+	vertical-align: top;
+	margin: 0;
+	padding: 0px;
+		z-index: 999;
+
+}
+
+li 
+{
+	padding-right: 30px;
+	list-style-type: none;
+	display: inline-block;
+	vertical-align: top;
+	margin: 0;
+		z-index: 999;
+}
+
+.dropbtn {
+    background-color: #4CAF50;
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+		z-index: 999;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #3e8e41;
+		z-index: 999;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+		z-index: 999;
+	
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	right: 0px;
+		z-index: 999;
+	
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+	right: 0px;
+		z-index: 999;
+}
+
+.dropdown a:hover {background-color: #f1f1f1}
+
+.show {display:block;}
+
+@media only screen and (max-width: 767px)
+{
+.logo
+{
+	max-width: 30%;
+	min-width: 150px !important;
+    height: auto;
+}
+.headnav
+{
+	display: none;
+}
+.dropdown
+{
+	float: right;
+		z-index: 999;
+}
+.container 
+{
+    display: inline-block;
+    cursor: pointer;
+		z-index: 999;
+}
+
+.bar1
+{
+	background-color: red;
+    width: 35px;
+    height: 5px;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.bar2
+{
+	background-color: blue;
+    width: 35px;
+    height: 5px;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.bar3{
+	
+
+background-color: red;
+    width: 35px;
+    height: 5px;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+    transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+    opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+    transform: rotate(45deg) translate(-8px, -8px) ;
+}
+
+}
+
+/* */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.show {display:block;}
+
+
+
+
+@media only screen and ( min-width:768px )
+{
+ .headnav
+{
+	float: right;
+	font-family: 'Fjalla One', sans-serif;
+	font-size: 14px;
+	a:link {text-decoration: none}
+}
+.dropdown
+	{
+		display: none;
+	}
+
+.logo
+{
+	max-width: 30%;
+    height: auto;
+    
+}
+

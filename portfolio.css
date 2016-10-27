@@ -1,0 +1,46 @@
+
+	body {
+  margin:0px !important;
+  font-family:Arial, sans-serif;
+  display:inline;
+	}
+	img
+	{
+		width: 100%;
+	}
+.tooltip {
+	margin: 0 !important;
+display: inline-block;
+width:25%;
+}
+div
+{
+	margin: 0 !important;
+	padding:0;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+.tooltip .tooltiptext {
+
+	position:relative;
+}
+.cardsprite
+{
+	
+}

@@ -1,0 +1,35 @@
+.contact
+{
+	margin-top:100px;
+	float:left;
+	position:relative;
+    z-index:3;
+	margin-left:20px;
+	background: white;
+	 margin-bottom:100px;
+}
+
+#googlemaps { 
+ 
+  margin-top: 100px;
+  height: 75%; 
+  width: 100%; 
+  position:absolute; 
+  top: 0; 
+  left: 0; 
+  z-index: 0; /* Set z-index to 0 as it will be on a layer below the contact form */
+}
+
+@media only screen and (max-width: 767px)
+{
+	#googlemaps{
+		margin-top: 670px !important;
+	height: 50%; 
+	width: 100%; 
+	position:absolute; 
+	top: 0; 
+	left: 0; 
+	z-index: 0; /* Set z-index to 0 as it will be on a layer below the contact form */
+	background-color: green;
+	}
+}
