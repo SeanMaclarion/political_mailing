@@ -373,6 +373,7 @@ ul.blog
 	float:right; width:30%;
 	font-size: 12px;
 	background-color: #3f7812;
+	margin-bottom:20px !important;
 }
 .blog1 {
     display: inline-block;

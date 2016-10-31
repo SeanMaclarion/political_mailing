@@ -1,6 +1,6 @@
 <?php
 require("connection.php");
-require("header.php");
+
 ?>
 
 <head>
@@ -14,17 +14,17 @@ require("header.php");
 </head>
 
 <body>
+<h2><center>Our Showcase</center></h2>
 <?php
 $result=mysqli_query($conn,"select * from portfolio");
 if ($result->num_rows > 0)
 {
 	while($row=mysqli_fetch_array($result))
 	{
-		echo "<div class='tooltip'>";
+		echo "<div class='card'>";
 	    echo "<a href='view_card.php?id=".$row["id"]."'>";	
-		echo "<img class='cardsprite' style='width: 100%; height: 30%; background: url(portfolio/" . $row["imageFront"] . ") -150px -100px;'>";
+		echo "<img class='cardsprite' style='width: 100%; height: 30%; background: url(portfolio/" . $row["imageFront"] . ") 20% 20%;'>";
 		echo "</a>";
-		echo "<span class='tooltiptext'>Some Text</span>";
 		echo "</div>";
 	}
 }
@@ -52,5 +52,5 @@ if(isset($_SESSION["user"]))
 
 </body>
 <?php
-require("footer.php");
+
 ?>

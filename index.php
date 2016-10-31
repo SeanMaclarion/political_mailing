@@ -120,6 +120,7 @@ $feed->handle_content_type();
 <!--End Social Media Div -->
 
 <?php
+require("portfolio.php");
 require("footer.php");
 ?>
 
