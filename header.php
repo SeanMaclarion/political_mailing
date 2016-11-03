@@ -23,7 +23,10 @@ $result = mysqli_query($conn, $sql);
 
 <head>
 <link rel="stylesheet" type="text/css" href="header.css">
-<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Fjalla+One">
+<link rel="stylesheet" type="text/css" href="ribbon.css">
+
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
 </head>
 
 <div class = "headdiv">
@@ -32,20 +35,16 @@ $result = mysqli_query($conn, $sql);
 <img class="logo" src="images/crstlogo.png" alt="CRST Logo" float:left;">
 
 <nav class = "headnav">
-<ul class="headernavbar">
-
-<li><a href="index.php"><img src = "images/home.png" style="width:20px; height:20px; padding-right: 20px;"></a></li>
-<li><a href="index.php#services">Services</a></li>
-<li><a href="portfolio.php">Portfolio</a></li>
-<li><a href="blog.php?p=1">Blog</a></li>
-<li><a href="contact.php">Contact Us</a></li>
-<li><?php
-	if(isset($_SESSION["user"]))
-	{
-	echo "Logged in as ". $temp; 
-	}
-?><li>
-</ul>
+<div id='container'>
+    <div class='ribbon'>
+    <a href="index.php"><span>Home</span></a>
+		<a href="index.php#services"><span>Services</span></a>
+		<a href="index.php#portfolio"><span>Portfolio</span></a>
+		<a href="blog.php?p=1"><span>Blog</span></a>
+		<a href="contact.php"><span>Contact Us</a>
+		
+    </div>
+</div>
 </nav>
 
 <div class="dropdown">
@@ -57,7 +56,7 @@ $result = mysqli_query($conn, $sql);
   <div id="myDropdown" class="dropdown-content">
     <a href="index.php">Home</a>
 	<a href="index.php#services">Services</a>
-	<a href="portfolio.php">Portfolio</a>
+	<a href="index.php#portfolio"">Portfolio</a>
 	<a href="blog.php?p=1">Blog</a>
 	<a href="contact.php">Contact Us</a>
   </div>

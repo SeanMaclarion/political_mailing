@@ -18,7 +18,7 @@ $feed->handle_content_type();
 ?>
 
 <head>
-<link rel="stylesheet" type="text/css" href="index.css">
+<link rel="stylesheet" type="text/css" href="style.css">
 <link rel="stylesheet" type="text/css" href="calander.css">
 <link href="themes/1/js-image-slider.css" rel="stylesheet" type="text/css" />
 <!-- js for Slideshow header -->
@@ -43,7 +43,7 @@ $feed->handle_content_type();
 <!--Slideshow Header-->
     <div id="sliderFrame">
         <div id="slider">
-            <img src="images/testheader.jpg"/>
+            <img src="images/testheader.jpg" style="width:100%;"/>
             <img src="images/testheader2.jpg"/>
             <img src="images/testheader3.jpg"/>
         </div>
@@ -57,8 +57,7 @@ $feed->handle_content_type();
 </div>
 <!--End About Text -->
 
-<!--Div for Services Cards -->
-<!--Creates a "card" iwht an image on the front and text on the back -->
+<!--Div for Services Animations -->
 <div class = "services" style="background: #f5f5f5">
 	<div class ="hvr-sweep-to-bottomDATA" style="width: 16%;"><img src="images/png/server.png" style="width: 100%;"></div>
 
@@ -72,13 +71,20 @@ $feed->handle_content_type();
     
 	<div class = "hvr-sweep-to-bottomMAILING"style="width:  16%;"><img src="images/png/email.png"style="width: 100%;"></div>
 </div>
+
+<A NAME="portfolio"></a>
+<?php
+require("portfolio.php");
+?>
 	
 <!--HTML for Twitter -->
 <a class="twitter-timeline" data-width="50%" data-height="500" href="https://twitter.com/CRSTNET">Tweets by CRSTNET</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 <!--Displays Blog Posts -->
 <ul class="blog">
-<b>Latest blog posts from Cornerstone's Blogs</b>
+<div class="blogheader">
+Latest blog posts from Cornerstone's Blogs
+</div>
 <br>
 <br>
 <?php foreach ($feed->get_items(0, 3) as $item): ?>
@@ -114,13 +120,23 @@ $feed->handle_content_type();
 <?php endforeach; ?>
 
 
+
+
 </ul>
 </div>
+
+<div id=”twitter_update_list”></div>
+<script type=”text/javascript” src=”http://twitter.com/javascripts/blogger.js”>
+</script>
+<script type=”text/javascript” src=”http://twitter.com/statuses/user_timeline/CRSTNET.json?callback=twitterCallback2&count=1″>
+</script>
+
+
 <!--End blog post display -->
 <!--End Social Media Div -->
 
 <?php
-require("portfolio.php");
+
 require("footer.php");
 ?>
 

@@ -1,21 +1,21 @@
-#sliderFrame, #sliderFrame div {
+#slider2Frame, #slider2Frame div {
 	z-index: q;
     box-sizing: content-box;
 }
-#sliderFrame 
+#slider2Frame 
 {
     width:100%;;
     margin:0 auto; /*center-aligned*/
 		z-index: 2;
 }
 
-#slider, #slider .sliderInner {
-    width:100%;height:306px;/* Must be the same size as the slider images */
+#slider2, #slider2 .slider2Inner {
+    width:100%;height:306px;/* Must be the same size as the slider2 images */
     border-radius:3px;
 	z-index: 2;
 }
 
-#slider {
+#slider2 {
     background-color:white;
     position:relative;
     margin:0 auto; /*center-aligned*/
@@ -24,19 +24,19 @@
 }
 
 /* the link style (if an image is wrapped by a link) */
-#slider a.imgLink, #slider .video {
+#slider2 a.imgLink, #slider2 .video {
     z-index:2;
     cursor:pointer;
     position:absolute;
     top:0px;left:0px;border:0;padding:0;margin:0;
     width:100%;height:100%;
 }
-#slider .video {
+#slider2 .video {
     background:transparent url(video.png) no-repeat 50% 50%;
 }
 
 /* Caption styles */
-#slider .mc-caption {
+#slider2 .mc-caption {
     position:absolute;
     width:100%;
     height:auto;
@@ -49,17 +49,17 @@
     text-align:center;
     background:rgba(0,0,0,0.3);
 }
-#slider .mc-caption a {
+#slider2 .mc-caption a {
     color:#FB0;
 }
-#slider .mc-caption a:hover {
+#slider2 .mc-caption a:hover {
     color:#DA0;
 }
 
 
 /* ------ built-in navigation bullets wrapper ------*/
-#slider .navBulletsWrapper  {
-    top:400px;
+#slider2 .navBulletsWrapper  {
+    top:320px;
     text-align:center;
     background:none;
     position:relative;
@@ -67,7 +67,7 @@
 }
 
 /* each bullet */
-#slider .navBulletsWrapper div 
+#slider2 .navBulletsWrapper div 
 {
     width:11px; height:11px;
     font-size:0;color:White;/*hide the index number in the bullet element*/
@@ -77,19 +77,19 @@
     margin:0 6px;/* set distance between each bullet*/
 }
 
-#slider .navBulletsWrapper .active {background-position:0 -11px;}
+#slider2 .navBulletsWrapper .active {background-position:0 -11px;}
 
 
 /* --------- Others ------- */
 
-#slider img, #slider>b, #slider a>b {
+#slider2 img, #slider2>b, #slider2 a>b {
     position:absolute; border:none; display:none;
 }
 
-#slider .sliderInner {
+#slider2 .slider2Inner {
     overflow:hidden;
     position:absolute; top:0; left:0;
 }
 
-#slider>a, #slider video, #slider audio {display:none;}
-#slider div {-webkit-transform: translate3d(0,0,0);transform: translate3d(0,0,0);}
+#slider2>a, #slider2 video, #slider2 audio {display:none;}
+#slider2 div {-webkit-transform: translate3d(0,0,0);transform: translate3d(0,0,0);}

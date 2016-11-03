@@ -96,7 +96,7 @@ if ($prevID != 1000000)
 			echo "<a href='view_card.php?id=" . $prevID . "'><button id='prevbutton'><</button></a>";
 		}
 
-
+require("footer.php");
 ?>
     </body>
 </html>

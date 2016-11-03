@@ -1,11 +1,13 @@
 .images
 {
+	margin-top:80px;
 	float:left;
 	width: 50%;
 	margin-left: 10px;
 }
 .content
 {
+	margin-top:80px;
 	float:right;
 	color: white;
 	width:48%;

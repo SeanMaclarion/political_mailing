@@ -14,6 +14,7 @@ require("connection.php");
 </head>
 
 <body>
+<div class="portfolio">
 <h2><center>Our Showcase</center></h2>
 <?php
 $result=mysqli_query($conn,"select * from portfolio");
@@ -29,23 +30,8 @@ if ($result->num_rows > 0)
 	}
 }
 ?>
-<?php
-if(!isset($_SESSION["user"]))
-			{
-				echo "<br><a href='login.php'><button>Login</button></a>";
-			}
-else
-{
-	echo "<br><br><a href='logout.php'><button>Logout</button></a>";
-}
-if(isset($_SESSION["user"]))
-				{
-					echo "<a href='create_card.php'><button>Create Post</button></a>";
-				}
-				
+</div>
 
-
-?>
 
 
   
