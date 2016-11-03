@@ -76,14 +76,23 @@ $feed->handle_content_type();
 <?php
 require("portfolio.php");
 ?>
-	
+
 <!--HTML for Twitter -->
-<div class="twitter">
-<a class="twitter-timeline" data-width="50%" data-height="500" href="https://twitter.com/CRSTNET">Tweets by CRSTNET</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<div class="twitterWrap">
+<div class="twitterHead">
+Connect with Us on Twitter
+<img src="images/whitetwitter.png" style="float:right; height:80px;"><br>
+<a class="twitter-follow-button"
+  href="https://twitter.com/CRSTNET">
+Follow @CRSTNET</a>
+</div>
+<div class="twitterBody">
+<a class="twitter-timeline" data-width="100%" data-height="500" href="https://twitter.com/CRSTNET">Tweets by CRSTNET</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
 </div>
 <!--Displays Blog Posts -->
-<ul class="blog">
-<div class="blogheader">
+<ul class="blogWrap">
+<div class="blogHead">
 Latest blog posts from Cornerstone's Blogs
 </div>
 <br>
@@ -93,7 +102,7 @@ Latest blog posts from Cornerstone's Blogs
 	<div style="width: 25%; float:left; display:inline-block;">
 	<?php if (strpos($item->get_link(0), 'crst.net') !== false)
 		{
-			echo "<img src='images/1.png' style='width: 15%;'>";
+			echo "<img src='images/1.png' style='width: 30%;'>";
 		}?>
 	<?php if (strpos($item->get_link(0), 'eddmtoday.com') !== false)
 		{
@@ -124,13 +133,7 @@ Latest blog posts from Cornerstone's Blogs
 
 
 </ul>
-</div>
 
-<div id=”twitter_update_list”></div>
-<script type=”text/javascript” src=”http://twitter.com/javascripts/blogger.js”>
-</script>
-<script type=”text/javascript” src=”http://twitter.com/statuses/user_timeline/CRSTNET.json?callback=twitterCallback2&count=1″>
-</script>
 
 
 <!--End blog post display -->

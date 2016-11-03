@@ -7,7 +7,7 @@ h1
 
 time.icon
 {
-  font-size: 1em; /* change icon size */
+  font-size: 9px; /* change icon size */
   display: inline-block;
   position: relative;
   width: 7em;
