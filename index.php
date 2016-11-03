@@ -78,8 +78,9 @@ require("portfolio.php");
 ?>
 	
 <!--HTML for Twitter -->
+<div class="twitter">
 <a class="twitter-timeline" data-width="50%" data-height="500" href="https://twitter.com/CRSTNET">Tweets by CRSTNET</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-
+</div>
 <!--Displays Blog Posts -->
 <ul class="blog">
 <div class="blogheader">
