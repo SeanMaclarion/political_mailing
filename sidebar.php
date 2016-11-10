@@ -5,7 +5,9 @@ require("connection.php");
 
 <div id="mySidebar" class="sidebar">
 
- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+<body onload="openNav()">
+
+<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 <form action="searchresults.php" method="POST">
  <input type="search" name="search" placeholder="Search Blog Posts"><br>
  <input type="submit" value="Search">
@@ -216,8 +218,8 @@ function openNav() {
 }
 
 function closeNav() {
-    document.getElementById("mySidebar").style.width = "0";
-    document.getElementById("main").style.marginRight= "0";
+    document.getElementById("mySidebar").style.width = "0px";
+    document.getElementById("main").style.marginRight= "0px";
 	document.getElementById("blog").style.width = "90%";
 	document.getElementById("sidebarButton").style.marginRight="0";
 
