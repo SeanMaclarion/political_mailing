@@ -302,7 +302,6 @@ ul.blog
 	width: 100%;
 	float:right;
 	padding: 0 !important;
-	background-color: #76ac31;
 	padding-left:10px;
 
 }
@@ -360,7 +359,7 @@ img.card
 	float:left;
 	z-index: 100;
 	display: inline-block;
-	width: 148%;
+	width: 138%;
 	margin-left:10px;
 	padding-top:20px;
 	text-align: left;
@@ -379,14 +378,18 @@ img.card
 		border-radius: 10px 10px 10px 10px;
 		padding-top:70px;
 		z-index:0;
-	width: 150%;
+	width: 140%;
 }
 
 .blogWrap
 {
 	width: 50%;
+	height:620px;
 	float: right;
 	margin: 0 !important;
+	background-color: #76ac31;
+	padding: 0;
+	border-radius: 10px 10px 10px 10px;
 	
 }
 
@@ -409,7 +412,7 @@ img.card
 
 .blogBody
 {
-	background-color:##76ac31;
+	
 	height: 700px;
 	margin-left: 10px;
 		border-radius: 10px 10px 10px 10px;
@@ -418,6 +421,42 @@ img.card
 		width: 150%;
 		
 }
+
+.footersocial
+{
+
+	
+}
+#googlemaps { 
+  border-top: 1px solid #9a9072;
+
+  margin-top: 2385px;
+  height: 500px; 
+  width: 100%; 
+  position:absolute; 
+  top: 0; 
+  left: 0; 
+  z-index: -1; /* Set z-index to 0 as it will be on a layer below the contact form */
+}
+
+/* Footer -------------------------------------------------- */
+footer {margin-top:650px;}
+footer .footer-top { padding:52px 0px; background-image:url(images/mid-bar.jpg);}
+footer .footer-top ul {margin-left:350px;}
+footer .footer-top ul li {display:inline-block; padding:0px 5px; }
+footer .footer-top ul li a { height:80px; width:80px; display:block; transition:all ease .3s; }
+footer .footer-top ul li a.fb { background:url(images/fb.png) no-repeat;background-size:cover; }
+footer .footer-top ul li a.twiter { background:url(images/twiter.png) no-repeat;background-size:cover; }
+footer .footer-top ul li a.rss { background:url(images/rs.png) no-repeat;background-size:cover; }
+footer .footer-top ul li a.linkedin { background:url(images/li.jpg) no-repeat;background-size:cover; }
+footer .footer-top ul li a.fb:hover { background:url(images/fb-hover.png) no-repeat;background-size:cover; }
+footer .footer-top ul li a.twiter:hover { background:url(images/twiter-hover.png) no-repeat;background-size:cover; }
+footer .footer-top ul li a.rss:hover { background:url(images/rs-hover.png) no-repeat;background-size:cover; }
+footer .footer-top ul li a.linkedin:hover { background:url(images/li-hover.jpg) no-repeat;background-size:cover; }
+footer .footer-bottom { background:#1e2c3b; padding:50px 0px; margin-top:700px;}
+footer .footer-bottom p { font-size:14px; line-height:16px; color:#2e5266;font-family: 'Montserrat', sans-serif; text-transform:uppercase; text-align:center; }
+footer .footer-bottom p a { color:#2e5266; text-decoration:none;  }
+footer .footer-bottom p a:hover { color:#fff; }
 
 
 
@@ -460,4 +499,11 @@ img.card
 	
 }
 
+html {
+    min-height:100%;
+}
+
+body {
+    height:100%;
+}
 

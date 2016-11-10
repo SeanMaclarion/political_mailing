@@ -1,23 +1,31 @@
 .contact
 {
-	margin-top:100px;
-	float:left;
+	margin-top:50px;
+
 	position:relative;
-    z-index:3;
+    z-index:0;
+	clear:both;
+	float:left;
 	margin-left:20px;
-	background: white;
-	 margin-bottom:100px;
+	padding-left:10px;
+	padding-right:10px;
+	background-color: white;
+	 margin-bottom:0px;
+	 border-radius: 10px 10px 10px 10px;
+	 	  box-shadow: 4px 4px 8px 8px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
 }
 
 #googlemaps { 
- 
-  margin-top: 100px;
-  height: 75%; 
+  border-top: 1px solid #9a9072;
+
+  margin-top: 2385px;
+  height: 80%; 
   width: 100%; 
   position:absolute; 
   top: 0; 
   left: 0; 
-  z-index: 0; /* Set z-index to 0 as it will be on a layer below the contact form */
+  z-index: -1; /* Set z-index to 0 as it will be on a layer below the contact form */
 }
 
 @media only screen and (max-width: 767px)
@@ -29,7 +37,7 @@
 	position:absolute; 
 	top: 0; 
 	left: 0; 
-	z-index: 0; /* Set z-index to 0 as it will be on a layer below the contact form */
+	z-index: -1; /* Set z-index to 0 as it will be on a layer below the contact form */
 	background-color: green;
 	}
 }

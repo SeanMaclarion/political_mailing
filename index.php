@@ -26,7 +26,7 @@ $feed->handle_content_type();
 <!-- end js for slide show header-->
     <link href="generic.css" rel="stylesheet" type="text/css" />
 </head>
-<div id="preloadedImages"></div>
+
 <!--Script for facebook feed-->
 <div id="fb-root"></div>
 
@@ -39,7 +39,7 @@ $feed->handle_content_type();
 }(document, 'script', 'facebook-jssdk'));</script>
 
 <!--end script for facebook feed -->
-
+<A NAME="home"></a>
 <!--Slideshow Header-->
     <div id="sliderFrame">
         <div id="slider">
@@ -139,8 +139,10 @@ Latest blog posts from Cornerstone's Blogs
 <!--End blog post display -->
 <!--End Social Media Div -->
 
-<?php
 
-require("footer.php");
+
+<?php
+require("footer2.php");
 ?>
 
+<A NAME="contact"></a>

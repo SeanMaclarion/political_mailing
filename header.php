@@ -32,16 +32,15 @@ $result = mysqli_query($conn, $sql);
 <div class = "headdiv">
 
 <div class = "header">
-<img class="logo" src="images/crstlogo.png" alt="CRST Logo" float:left;">
+<a href="index.php#home"><img class="logo" src="images/crstlogo.png" alt="CRST Logo" float:left;"></a>
 
 <nav class = "headnav">
 <div id='container'>
     <div class='ribbon'>
-    <a href="index.php"><span>Home</span></a>
 		<a href="index.php#services"><span>Services</span></a>
 		<a href="index.php#portfolio"><span>Portfolio</span></a>
 		<a href="blog.php?p=1"><span>Blog</span></a>
-		<a href="contact.php"><span>Contact Us</a>
+		<a href="index.php#contact"><span>Contact Us</a>
 		
     </div>
 </div>
@@ -54,7 +53,7 @@ $result = mysqli_query($conn, $sql);
   <div class="bar3"></div>
   </div>
   <div id="myDropdown" class="dropdown-content">
-    <a href="index.php">Home</a>
+    <a href="index.php#home">Home</a>
 	<a href="index.php#services">Services</a>
 	<a href="index.php#portfolio"">Portfolio</a>
 	<a href="blog.php?p=1">Blog</a>

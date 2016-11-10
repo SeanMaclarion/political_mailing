@@ -1,16 +1,21 @@
-<?php
-require("connection.php");
-if(!isset($_SESSION)) 
-    { 
-        session_start(); 
-    } 
-?>
-
 <head>
-<link rel="stylesheet" type="text/css" href="contact.css">
 
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="contact.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
 
+<footer>
+<div class="footer-top">
+<div class="footersocial">          	
+	<ul>
+		<li><a class="fb" href="https://www.facebook.com/CornerstoneServicesInc/" target="_blank">&nbsp;</a></li>
+		<li><a class="twiter" href="https://twitter.com/CRSTNET" target="_blank">&nbsp; </a></li>
+		<li><a class="rss" href="http://crst.net/articles/" target="_blank">&nbsp;</a> </li>
+		<li><a class="linkedin" href="https://www.linkedin.com/company/cornerstone-services-inc-?trk=top_nav_home" target="_blank">&nbsp;</a> </li>
+	</ul>
+</div>
+    </div>                 
 <!--Div for google maps styling -->
 <div id="googlemaps"></div>
 
@@ -21,8 +26,8 @@ if(!isset($_SESSION))
 
 <!--Information block -->
 Cornerstone Services<br>
-Phone #<br>
-Address
+Address: 31 S Ohioville Rd, New Paltz, NY 12561<br>
+Phone:(845) 255-5722
 <!--Information block end -->
 <br><br>
 <!--Type of mailing dropdown -->
@@ -70,14 +75,14 @@ pieces to:
 <script type="text/javascript">
  
 // The latitude and longitude of Cornerstone Services
-var position = [41.7365,-74.07];
+var position = [41.7365,-74.13];
  
 function showGoogleMaps() {
  
     var latLng = new google.maps.LatLng(position[0], position[1]);
  
     var mapOptions = {
-        zoom: 14, // initialize zoom level - the max value is 21
+        zoom: 12, // initialize zoom level - the max value is 21
 		scrollwheel: false,
 		mapTypeControl: false,  
 		panControl: false,
@@ -100,3 +105,12 @@ google.maps.event.addDomListener(window, 'load', showGoogleMaps);
 <?php
 ?>
 
+	<div class="footer-bottom">
+	<p>&copy; 2016<a href="https://www.dataconsulate.com"> Political Mailing.</a> All rights reserved.  Privacy Policy.</p>
+	</div>
+</div>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="js/bootstrap.min.js"></script>
