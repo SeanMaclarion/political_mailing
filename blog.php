@@ -99,6 +99,7 @@ $conn->close();
 
 </script>
 </div>
+
 <?php
 require("footer.php");
 ?>

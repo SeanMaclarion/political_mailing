@@ -50,8 +50,8 @@ while($row=mysqli_fetch_array($query))
 			if ($result2)
 			{
 				$row2 = mysqli_fetch_row($result2);
-				$tags = $row2[0];
-				$tagsArray = explode(",",$tags);
+				$tags2 = $row2[0];
+				$tagsArray = explode(",",$tags2);
 			}
 			$index = 0;
 			$count = count($tagsArray);
