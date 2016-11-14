@@ -212,6 +212,7 @@ function openNav() {
     document.getElementById("main").style.marginRight = "250px";
 	document.getElementById("blog").style.width = "75%";
 	document.getElementById("sidebarButton").style.marginRight = "250px";
+		document.getElementById("sidebarButton").style.opacity = "0";
 
 }
 
@@ -220,6 +221,7 @@ function closeNav() {
     document.getElementById("main").style.marginRight= "0px";
 	document.getElementById("blog").style.width = "90%";
 	document.getElementById("sidebarButton").style.marginRight="0";
+		document.getElementById("sidebarButton").style.opacity = "100";
 
 	
 }

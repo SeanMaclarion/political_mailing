@@ -5,6 +5,14 @@ require("sidebar.php");
 ?>
 <head>
 <link rel="stylesheet" type="text/css" href="blog.css">
+<title>Political Mailing Blog by Cornerstone</title>
+<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="copyright" content="">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="robots" content="index, follow" />
 </head>
 <div id="blog">
 <?php

@@ -18,6 +18,18 @@ $feed->handle_content_type();
 ?>
 
 <head>
+
+<title>Political Mailing by Cornerstone</title>
+<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="copyright" content="">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="robots" content="index, follow" />
+
+
+
 <link rel="stylesheet" type="text/css" href="style.css">
 <link rel="stylesheet" type="text/css" href="calander.css">
 <link href="themes/1/js-image-slider.css" rel="stylesheet" type="text/css" />
@@ -85,10 +97,16 @@ Connect with Us on Twitter
 <a class="twitter-follow-button"
   href="https://twitter.com/CRSTNET">
 Follow @CRSTNET</a>
-</div>
 <div class="twitterBody">
-<a class="twitter-timeline" data-width="100%" data-height="500" href="https://twitter.com/CRSTNET">Tweets by CRSTNET</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<!--
+
+<a class="twitter-timeline" data-tweet-limit="1" data-chrome="noheader nofooter noborders transparent" data-width="100%" data-height="500" href="https://twitter.com/CRSTNET">Tweets by CRSTNET</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+-->
+<?php require("twittertest.php");?>
 </div>
+</div>
+
 </div>
 <!--Displays Blog Posts -->
 <ul class="blogWrap">
@@ -133,6 +151,7 @@ Latest blog posts from Cornerstone's Blogs
 
 
 </ul>
+
 
 
 

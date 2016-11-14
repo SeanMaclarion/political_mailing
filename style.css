@@ -351,6 +351,7 @@ img.card
 .twitterWrap
 {
 	float: left;
+	width:45%;
 }
 
 .twitterHead
@@ -359,7 +360,7 @@ img.card
 	float:left;
 	z-index: 100;
 	display: inline-block;
-	width: 138%;
+	width: 100%;
 	margin-left:10px;
 	padding-top:20px;
 	text-align: left;
@@ -373,12 +374,12 @@ img.card
 .twitterBody
 {
 	background-color:#67aeeb;
-	height: 550px;
+	height: 470px;
 	margin-left: 10px;
 		border-radius: 10px 10px 10px 10px;
 		padding-top:70px;
 		z-index:0;
-	width: 140%;
+	width: 100%;
 }
 
 .blogWrap
