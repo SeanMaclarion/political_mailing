@@ -7,6 +7,12 @@ $sql = "select * from blog_posts where id = $id";
 $result = mysqli_query($conn, $sql);
 ?>
 <head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="copyright" content="">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="robots" content="noindex, nofollow" />
 <link rel="stylesheet" type="text/css" href="blog.css">
 </head>
 <div id="blog">

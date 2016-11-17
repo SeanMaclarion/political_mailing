@@ -3,6 +3,12 @@ require("connection.php");
 require("header.php");
 require("sidebar.php");
 ?>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="copyright" content="">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="robots" content="noindex, nofollow" />
 <link rel="stylesheet" type="text/css" href="blog.css">
 <?php
 $user= $_GET['username'];

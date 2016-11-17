@@ -1,11 +1,12 @@
 <?php
 require ("connection.php");
 require ("header.php");
+//Initializes Login Session
 if(!isset($_SESSION)) 
     { 
         session_start(); 
     } 
-// Settings for Recent Blog Posts on index.php
+// Sets feed for Blog Post retrieval 
 include_once $_SERVER['DOCUMENT_ROOT'] . '\political_mailing\simplepie\simplepie.inc.php';
 $feed = new SimplePie();
 $feed->set_feed_url(array(
@@ -14,7 +15,7 @@ $feed->set_feed_url(array(
 $feed->enable_cache(false);
 $feed->init();
 $feed->handle_content_type();
-//end settings
+
 ?>
 
 <!--Google Analytics Script-->
@@ -31,6 +32,7 @@ $feed->handle_content_type();
 
 <head>
 
+<!--Meta Tags for SEO-->
 <title>Political Mailing by Cornerstone</title>
 <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
 
@@ -40,30 +42,17 @@ $feed->handle_content_type();
 <meta name="keywords" content="">
 <meta name="robots" content="index, follow" />
 
-
-
+<!--Stylesheets-->
 <link rel="stylesheet" type="text/css" href="style.css">
 <link rel="stylesheet" type="text/css" href="calander.css">
 <link href="themes/1/js-image-slider.css" rel="stylesheet" type="text/css" />
+
 <!-- js for Slideshow header -->
-    <script src="themes/1/js-image-slider.js" type="text/javascript"></script> 
-<!-- end js for slide show header-->
-    <link href="generic.css" rel="stylesheet" type="text/css" />
+ <script src="themes/1/js-image-slider.js" type="text/javascript"></script> 
 </head>
-
-<!--Script for facebook feed-->
-<div id="fb-root"></div>
-
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.7";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-
-<!--end script for facebook feed -->
+<!--Logo redirects here-->
 <A NAME="home"></a>
+
 <!--Slideshow Header-->
     <div id="sliderFrame">
         <div id="slider">
@@ -72,14 +61,14 @@ $feed->handle_content_type();
             <img src="images/testheader3.jpg"/>
         </div>
 		</div>
-<!--end slideshow Header -->
+
 
 <!--About Text-->
 <A NAME="services"></a>
 <div class="text">
 <br><br><br><br><br><center>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</center><br><br><br><br><br>
 </div>
-<!--End About Text -->
+
 
 <!--Div for Services Animations -->
 <div class = "services" style="background: #f5f5f5">
@@ -96,6 +85,7 @@ $feed->handle_content_type();
 	<div class = "hvr-sweep-to-bottomMAILING"style="width:  16%;"><img src="images/png/email.png"style="width: 100%;" alt="Mailing"></div>
 </div>
 
+<!--Space for Portfolio, code in Portfolio.php, not crawlable-->
 <A NAME="portfolio"></a>
 <?php
 require("portfolio.php");
@@ -109,12 +99,8 @@ Connect with Us on Twitter
 <a class="twitter-follow-button"
   href="https://twitter.com/CRSTNET">
 Follow @CRSTNET</a>
+<!--PHP file for capturing latest tweet-->
 <div class="twitterBody">
-
-<!--
-
-<a class="twitter-timeline" data-tweet-limit="1" data-chrome="noheader nofooter noborders transparent" data-width="100%" data-height="500" href="https://twitter.com/CRSTNET">Tweets by CRSTNET</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
--->
 <?php require("twittertest.php");?>
 </div>
 </div>
@@ -130,6 +116,7 @@ Latest blog posts from Cornerstone's Blogs
 <?php foreach ($feed->get_items(0, 3) as $item): ?>
     <li class="blog1">
 	<div style="width: 25%; float:left; display:inline-block;">
+<!--Assigns Website Logo to unique blog posts -->
 	<?php if (strpos($item->get_link(0), 'crst.net') !== false)
 		{
 			echo "<img src='images/1.png' style='width: 30%;'>";
@@ -140,13 +127,14 @@ Latest blog posts from Cornerstone's Blogs
 		}?>
 				<?php $month= $item->get_date('M'); ?>
 		<?php $date = $item->get_date('d'); ?>
-
+<!-- Creates Calander Icons-->
 		<time datetime="0000-00-00" class="icon">
 		<strong><?php echo $month ?></strong>
 		<span><?php echo $date ?></span>  
 		</time>
 		</div>
 		<div style="width: 75%; float:right; display: inline-block;">
+<!--Gets Text for Title and Content(description) and prints -->
         <b><?php print $item->get_title(); ?></b>
 		<?php print $item->get_description(); ?>
 		<?php echo "<a href='". $item->get_link(0) . "'>Click here to read more...</a>";?>
@@ -158,22 +146,10 @@ Latest blog posts from Cornerstone's Blogs
 		<br>
     </li>
 <?php endforeach; ?>
-
-
-
-
 </ul>
-
-
-
-
-<!--End blog post display -->
-<!--End Social Media Div -->
-
-
 
 <?php
 require("footer2.php");
 ?>
-
+<!--Contact redirects here -->
 <A NAME="contact"></a>

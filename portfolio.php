@@ -4,6 +4,12 @@ require("connection.php");
 ?>
 
 <head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="copyright" content="">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="robots" content="noindex, nofollow" />
 <!--Style Sheet for portfolio page -->
 <link rel="stylesheet" type="text/css" href="portfolio.css">
 <!--Style Sheet for lightbox -->

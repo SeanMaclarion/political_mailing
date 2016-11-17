@@ -17,30 +17,34 @@ require("sidebar.php");
 </script>
 
 <head>
+<!--Stylesheets -->
 <link rel="stylesheet" type="text/css" href="blog.css">
+<!--Meta tags for SEO -->
 <title>Political Mailing Blog by Cornerstone</title>
 <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
-
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="copyright" content="">
 <meta name="description" content="">
 <meta name="keywords" content="">
 <meta name="robots" content="index, follow" />
 </head>
+
 <div id="blog">
+<!--Sets Page for Paginator -->
 <?php
-$page=$_REQUEST['p'];
-$limit=3;
-if($page=='')
+$page=$_REQUEST['p']; //page from URL
+$limit=3; //limit of post on a page
+if($page=='') //If no page selected , go to page 1
 {
  $page=1;
  $start=0;
 }
-else
+else //else find what page you need to be on
 {
  $start=$limit*($page-1);
 }
-$query=mysqli_query($conn,"select * from blog_posts ORDER BY postDate DESC limit $start, $limit");
+//Prints out blog posts in descending order with a limit of $limit per page
+$query=mysqli_query($conn,"select * from blog_posts ORDER BY postDate DESC limit $start, $limit"); 
 $tot=mysqli_query($conn, "select * from blog_posts");
 $total=mysqli_num_rows($tot);
 $num_page=ceil($total/$limit);
@@ -94,7 +98,7 @@ else
 
 
 
-
+//Calls pagination function and prints pages on bottom of page
 function pagination($page,$num_page)
 {
   echo'<ul style="list-style-type:none;">';
