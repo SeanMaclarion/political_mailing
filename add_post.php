@@ -1,4 +1,4 @@
-
+<!--Takes info from create_post.php and sends it to the database-->
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="copyright" content="">
 <meta name="description" content="">
