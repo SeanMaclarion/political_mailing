@@ -106,7 +106,7 @@ google.maps.event.addDomListener(window, 'load', showGoogleMaps);
 ?>
 
 	<div class="footer-bottom">
-	<p>&copy; 2016<a href="https://www.dataconsulate.com"> Political Mailing.</a> All rights reserved.  Privacy Policy.</p>
+	<p>&copy; 2016<a href="http://www.politicalmailing.com/"> Political Mailing.</a> All rights reserved.  Privacy Policy.</p>
 	</div>
 </div>
 </footer>

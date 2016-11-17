@@ -17,6 +17,18 @@ $feed->handle_content_type();
 //end settings
 ?>
 
+<!--Google Analytics Script-->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-87612942-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
 <head>
 
 <title>Political Mailing by Cornerstone</title>
@@ -55,7 +67,7 @@ $feed->handle_content_type();
 <!--Slideshow Header-->
     <div id="sliderFrame">
         <div id="slider">
-            <img src="images/testheader.jpg" style="width:100%;"/>
+            <img src="images/testheader.jpg"/>
             <img src="images/testheader2.jpg"/>
             <img src="images/testheader3.jpg"/>
         </div>
@@ -71,17 +83,17 @@ $feed->handle_content_type();
 
 <!--Div for Services Animations -->
 <div class = "services" style="background: #f5f5f5">
-	<div class ="hvr-sweep-to-bottomDATA" style="width: 16%;"><img src="images/png/server.png" style="width: 100%;"></div>
+	<div class ="hvr-sweep-to-bottomDATA" style="width: 16%;"><img src="images/png/server.png" style="width: 100%;" alt="Data"></div>
 
-    <div class = "hvr-sweep-to-bottomGRAPHICS"style="width: 16%;"><img src="images/png/laptop-2.png"style="width: 100%;"></div>
+    <div class = "hvr-sweep-to-bottomGRAPHICS"style="width: 16%;"><img src="images/png/laptop-2.png"style="width: 100%;" alt="Graphic Design"></div>
 	
-	<div class = "hvr-sweep-to-bottomSTRATEGY"style="width:  16%;"><img src="images/png/strategy.png"style="width: 100%;"></div>
+	<div class = "hvr-sweep-to-bottomSTRATEGY"style="width:  16%;"><img src="images/png/strategy.png"style="width: 100%;" alt="Strategy"></div>
     
-	<div class = "hvr-sweep-to-bottomPRINTING"style="width: 16%;"><img src="images/png/printer.png"style="width: 100%;"></div>
+	<div class = "hvr-sweep-to-bottomPRINTING"style="width: 16%;"><img src="images/png/printer.png"style="width: 100%;" alt="Printing"></div>
    
-    <div class = "hvr-sweep-to-bottomFUNDRAISING"style="width:  16%;"><img src="images/png/dollar-symbol.png"style="width: 100%;"></div>
+    <div class = "hvr-sweep-to-bottomFUNDRAISING"style="width:  16%;"><img src="images/png/dollar-symbol.png"style="width: 100%;" alt="Fundraising"></div>
     
-	<div class = "hvr-sweep-to-bottomMAILING"style="width:  16%;"><img src="images/png/email.png"style="width: 100%;"></div>
+	<div class = "hvr-sweep-to-bottomMAILING"style="width:  16%;"><img src="images/png/email.png"style="width: 100%;" alt="Mailing"></div>
 </div>
 
 <A NAME="portfolio"></a>

@@ -36,7 +36,7 @@ if ($result->num_rows > 0){
 		 echo "<img src='images/".$row[1]."'/ height='auto' width='100%'>";
 		?>
 		<?php
-echo "<br><a href='https://twitter.com/intent/tweet?url=https://www.politicalmailing.com&text=Share%20Post&original_referer=https://www.politicalmailing.com'><img src='images/twitter.png'></a>";
+echo "<br><a href='https://twitter.com/intent/tweet?url=https://www.politicalmailing.com&text=Share%20Post&original_referer=https://www.politicalmailing.com'><img src='images/twittershare.png'></a>";
 ?>
 
 

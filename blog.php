@@ -3,10 +3,23 @@ require('header.php');
 require("connection.php");
 require("sidebar.php");
 ?>
+
+<!--Google Analytics Script-->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-87612942-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
 <head>
 <link rel="stylesheet" type="text/css" href="blog.css">
 <title>Political Mailing Blog by Cornerstone</title>
-<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
 
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="copyright" content="">
@@ -27,7 +40,7 @@ else
 {
  $start=$limit*($page-1);
 }
-$query=mysqli_query($conn,"select * from blog_posts limit $start, $limit");
+$query=mysqli_query($conn,"select * from blog_posts ORDER BY postDate DESC limit $start, $limit");
 $tot=mysqli_query($conn, "select * from blog_posts");
 $total=mysqli_num_rows($tot);
 $num_page=ceil($total/$limit);
@@ -36,7 +49,7 @@ if ($result->num_rows > 0)
 	while($row=mysqli_fetch_array($query))
 	{
 	   echo "<br>";
-	   echo "<br>". "<a href='view_post.php?id=".$row["id"]."'>" . $row["postTitle"] . "</a>" ."<br>". "<img src='images/".$row["postImage"]."'/ height='auto' width='100%'>" ."<br>";	
+	   echo "<br>". "<a href='view_post.php?id=".$row["id"]."'><h1>" . $row["postTitle"] . "</h1></a>" ."<br>". "<img src='images/".$row["postImage"]."'/ height='auto' width='100%'>" ."<br>";	
 				echo substr($row["postContent"], 0, 500) . "...";
 				echo "<a href='view_post.php?id=".$row["id"]."'>" . "Click here to read more</a><br>";
 				

@@ -46,6 +46,7 @@ if ($result->num_rows > 0){
 if(isset($_SESSION["user"]))
 				{
 					echo "<a href='edit_card.php?id=$id'><button>Edit Post</button></a>";
+					echo "<a href='create_card.php'><button>Create Card</button></a>";
 				}
 				?>
 				

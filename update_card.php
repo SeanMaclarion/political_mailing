@@ -13,7 +13,7 @@ $connect = $conn->query($sql) or die("Cannot connect.");
 
 $conn->close();
 
-header("location:portfolio.php");
+header("location:index.php#portfolio");
 
 
 ?>
