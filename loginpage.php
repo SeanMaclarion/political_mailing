@@ -16,6 +16,7 @@ if(isset($_SESSION['username']))
 
 ?>
 
+<!-- form for user to enter username and password which is sent to login.php -->
 <html>
 <head>
 <link href="style.css" rel="stylesheet" type="text/css">

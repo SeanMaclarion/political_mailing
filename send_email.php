@@ -9,8 +9,9 @@
 require("header.php");
 require("connection.php");
 
+//variables from form for email input
 $to = "sgriffin@crst.net";
-$subject = "Estimate from PoliticalMailing.com";
+$subject = "Email from PoliticalMailing.com";
 $name = trim(stripslashes($_POST['name'])); 
 $email = trim(stripslashes($_POST['email'])); 
 $phone = trim(stripslashes($_POST['phone'])); 
@@ -62,7 +63,7 @@ if ($success){
 	header("Location: index.php");  
 
 }
-else
+else //if email does not succeed
 {
 	alert("Email not Sent, Try again later!");
 	header("Location: contact.php");

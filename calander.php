@@ -1,4 +1,4 @@
-
+<!-- HTML for Calander icon for blog posts on index.php-->
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="copyright" content="">
 <meta name="description" content="">

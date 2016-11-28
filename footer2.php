@@ -1,4 +1,4 @@
-
+<!-- Footer for PoliticalMailing -->
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="copyright" content="">
 <meta name="description" content="">
@@ -13,6 +13,7 @@
 </head>
 
 <footer>
+<!-- Social Bar for Footer, contains images and links to Social Media-->
 <div class="footer-top">
 <div class="footersocial">          	
 	<ul>
@@ -79,6 +80,7 @@ pieces to:
 <!-- Include the Google Maps API library - required for embedding maps -->
 <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBhRRXcnQR1UmpgwHri_IXQrFna0M7j31c&callback=initMap"></script>
  
+ <!-- JS for Google Maps -->
 <script type="text/javascript">
  
 // The latitude and longitude of Cornerstone Services

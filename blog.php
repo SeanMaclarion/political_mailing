@@ -23,9 +23,9 @@ require("sidebar.php");
 <title>Political Mailing Blog by Cornerstone</title>
 <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="copyright" content="">
-<meta name="description" content="">
-<meta name="keywords" content="">
+<meta name="copyright" content="2016, Cornerstone Services">
+<meta name="description" content="Website for Political Mailing by Cornerstone Services.">
+<meta name="keywords" content="direct mail, political mail, campaign mail, fundraising mail, mail blog">
 <meta name="robots" content="index, follow" />
 </head>
 

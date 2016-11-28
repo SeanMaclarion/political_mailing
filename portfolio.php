@@ -1,3 +1,4 @@
+<!--Portfolio section for index.php, displays image of card with link for view_post.php of the card -->
 <?php
 require("connection.php");
 
@@ -12,8 +13,6 @@ require("connection.php");
 <meta name="robots" content="noindex, nofollow" />
 <!--Style Sheet for portfolio page -->
 <link rel="stylesheet" type="text/css" href="portfolio.css">
-<!--Style Sheet for lightbox -->
-<link href="lightbox.css" rel="stylesheet">
 <style>
 
 </style>
@@ -26,6 +25,7 @@ require("connection.php");
 $result=mysqli_query($conn,"select * from portfolio");
 if ($result->num_rows > 0)
 {
+	//creates card with sprite of image and adds link for view card for each card.
 	while($row=mysqli_fetch_array($result))
 	{
 		echo "<div class='card'>";

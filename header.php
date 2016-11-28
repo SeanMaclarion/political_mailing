@@ -1,5 +1,7 @@
+<!--Header for PoliticalMailing.com -->
 <?php
 require("connection.php");
+//saves sessions for logged in users
 if(!isset($_SESSION)) 
     { 
         session_start(); 
@@ -38,8 +40,10 @@ $result = mysqli_query($conn, $sql);
 <div class = "headdiv">
 
 <div class = "header">
-<a href="index.php#home"><img class="logo" src="images/crstlogo.png" alt="CRST Logo" float:left;"></a>
+<!-- Header Logo and Link to Home Page -->
+<a href="index.php#home"><img class="logo" src="images/crstlogo.png" alt="CRST Logo"></a>
 
+<!-- Header for Desktop and Laptop -->
 <nav class = "headnav">
 <div id='container'>
     <div class='ribbon'>
@@ -52,6 +56,7 @@ $result = mysqli_query($conn, $sql);
 </div>
 </nav>
 
+<!-- Harmburger menu for tablet and mobile -->
 <div class="dropdown">
   <div class="container" onclick="myFunction(this)">
   <div class="bar1"></div>

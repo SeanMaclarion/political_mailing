@@ -9,15 +9,16 @@
 require("connection.php");
 ?>
 <body>
-
+<!-- creates sidebar div -->            
 <div id="mySidebar" class="sidebar">
-
+<!-- adds close button with reference to close js function -->
 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 <form action="searchresults.php" method="POST">
  <input type="search" name="search" placeholder="Search Blog Posts"><br>
  <input type="submit" value="Search">
 </form>
 
+<!--allows user to create posts if logged in -->
 <?php
 if(isset($_SESSION["user"]))
 				{
@@ -25,7 +26,7 @@ if(isset($_SESSION["user"]))
 				}
 				
 echo "<br><br><strong>Most Recent Blog Posts</strong>";
-//Latest Posts
+//Shows the 3 most recent posts titles with links in sidebar
 $count = 0;
 $result = mysqli_query($conn,"SELECT * FROM blog_posts ORDER BY postDate DESC, postTIME DESC");
 if ($result->num_rows > 0)
@@ -41,7 +42,7 @@ if ($result->num_rows > 0)
 		echo "<br><br>";
 }
 
-//Sort by Month
+//Sorts all blog posts by months and displays how many posts are in each month, when clicked, shows all posts from the month
 echo "<strong>Blog Posts by Month<br></strong>";
 $month = 1;
 $year = 16; //updated to current year
@@ -65,7 +66,7 @@ while ($month <= 12)
 ?>
 <br>
 <?php
-//Sort by User
+//Sorts all blog posts by user and displays how many posts each user has made, when clicked shows all posts by each user
 echo "<strong>Blog Posts by User<br></strong>";
 $sql = "SELECT username FROM blog_posts";
 $result = mysqli_query($conn,$sql);
@@ -109,7 +110,7 @@ while ($index <= $count)
 	$index++;
 	}
 }
-//tags
+//Sorts all posts by tags, when clicked shows all posts with that tag
 echo "<br><strong>Blog Posts by Tag</strong>";
 $sql = "SELECT tags FROM blog_posts";
 $result = mysqli_query($conn,$sql);
@@ -164,7 +165,6 @@ $tagArray = array();
 $sidebarArray = array();
 while($displayIndex < $count)
 {
-	//echo "<br><a href='view_tags.php?tags=".$displayArray[$displayIndex]."'>" . $displayArray[$displayIndex] . "</a>";
 	$sql = "select * from blog_posts where tags LIKE '%" . $displayArray[$displayIndex] . "%' ORDER BY postDate DESC, postTIME DESC";
 		$result = mysqli_query($conn, $sql);
 		$tagCount = 0;

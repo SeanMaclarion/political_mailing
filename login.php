@@ -33,6 +33,7 @@ require ("connection.php");
       }
    }
 ?>
+<!-- form for entering username and password -->
 <html>
 <form action="" method="post">
 <label>UserName :</label>

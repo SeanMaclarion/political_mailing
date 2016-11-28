@@ -6,11 +6,29 @@
 <meta name="robots" content="noindex, nofollow" />
 
 <?php
+$name = '';
+if (isset($_FILES["file"]["name"])) {
+
+    $name = $_FILES["file"]["name"];
+    $tmp_name = $_FILES['file']['tmp_name'];
+    $error = $_FILES['file']['error'];
+
+    if (!empty($name)) {
+        $location = 'C:\xampp\htdocs\political_mailing\images/';
+
+        if  (move_uploaded_file($tmp_name, $location.$name)){
+            echo 'Uploaded';
+        }
+
+    } else {
+        echo 'please choose a file';
+    }
+}
 
 require("connection.php");
 
 $postTitle = $_POST['postTitle'];
-$postImage= $_POST['postImage'];
+$postImage= $name;
 $postContent = $_POST['postContent'];
 $postDate = $_POST['postDate'];
 $postTime = $_POST['postTime'];
@@ -24,7 +42,6 @@ $connect = $conn->query($sql) or die("Cannot connect.");
 
 $conn->close();
 
-header("location:blog.php?p=1");
 
 
 ?>

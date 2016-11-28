@@ -32,10 +32,10 @@ Change Caption:<br>
 Change Result*<br>
 <textarea placeholder="Type Result Here"rows="1" cols="50" name="result"><?php echo $result?></textarea><br><br>
 <input type='hidden' name='id' value=<?php echo $id;?>> 
-<input type="submit" value="Update Post">
+<input type="submit" value="Update Card">
 </form>
 
 <form action ="delete_card.php" method="POST">
 <input type='hidden' name='id' value=<?php echo $id;?>>
-<input type="submit" value="Delete Post">
+<input type="submit" value="Delete Card">
 </form>
