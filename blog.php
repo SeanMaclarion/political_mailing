@@ -54,7 +54,7 @@ if ($result->num_rows > 0)
 	{
 	   echo "<br>";
 	   echo "<br>". "<a href='view_post.php?id=".$row["id"]."'><h1>" . $row["postTitle"] . "</h1></a>" ."<br>". "<img src='images/".$row["postImage"]."'/ height='auto' width='100%'>" ."<br>";	
-				echo substr($row["postContent"], 0, 500) . "...";
+				echo "<div id='text' name='text'>" . substr($row["postContent"], 0, 500) . " ...</div>";
 				echo "<a href='view_post.php?id=".$row["id"]."'>" . "Click here to read more</a><br>";
 				
 				if ($row["editUser"] != "")
@@ -122,6 +122,21 @@ if($num_page>1)
 $conn->close();
 ?>
 
+</script>
+<script type="text/javascript" src="micromarkdown.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+<script>
+  var input = $('#text').text();
+$(document).ready(function(){
+  $('#text').html(micromarkdown.parse(input));
+    if($display = "no"){
+        $("form").hide();
+    }
+	if($display = "yes"){
+        $("form").show();
+    }
+});
 </script>
 </div>
 

@@ -42,6 +42,8 @@ $connect = $conn->query($sql) or die("Cannot connect.");
 
 $conn->close();
 
+header("location:blog.php?p=1");
+
 
 
 ?>
