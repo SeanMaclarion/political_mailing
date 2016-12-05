@@ -1,6 +1,27 @@
 <?php
-require('header.php');
+
 require("connection.php");
+//saves sessions for logged in users
+if(!isset($_SESSION)) 
+    { 
+        session_start(); 
+    } 
+if(isset($_SESSION["user"]))
+{
+	
+$temp = $_SESSION["user"];
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+} 
+
+$sql = "SELECT user FROM blog_users WHERE user = '$temp'";
+$result = mysqli_query($conn, $sql);
+
+		
+}
+
 require("sidebar.php");
 ?>
 
@@ -44,7 +65,7 @@ else //else find what page you need to be on
  $start=$limit*($page-1);
 }
 //Prints out blog posts in descending order with a limit of $limit per page
-$query=mysqli_query($conn,"select * from blog_posts ORDER BY postDate DESC limit $start, $limit"); 
+$query=mysqli_query($conn,"select * from blog_posts ORDER BY postDate DESC , postTIME DESC limit $start, $limit"); 
 $tot=mysqli_query($conn, "select * from blog_posts");
 $total=mysqli_num_rows($tot);
 $num_page=ceil($total/$limit);
@@ -141,6 +162,5 @@ $(document).ready(function(){
 </div>
 
 <?php
-require("footer.php");
 ?>
 

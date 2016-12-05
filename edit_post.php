@@ -43,10 +43,10 @@ Post Content:<br>
 							<li role="presentation" class="active"><a  id = "preview_label" role="tab" data-toggle="tab" aria-expanded="true">Preview</a></li>
 						</ul>
 
-<textarea id = "text" name="postContent" style=" width:600px; height:300px;"><?php echo $content; ?></textarea>
+<textarea id = "text" name="postContent" style="width:600px; height:300px;" placeholder="<?php echo $content; ?>"><?php echo $content; ?></textarea>
 <div id='fake_textarea' name = 'fake_textarea' contenteditable = "true" style="display: none;"></div>
 Tag Post *Seperated by commas*<br>
-<input name="tags" type="text" value="<?php echo $tags; ?>"><br>
+<input " name="tags" type="text" value="<?php echo $tags; ?>"><br>
 
 <input type='hidden' name='id' value=<?php echo $id;?>> 
 <input type='hidden' name='editDate' value=<?php echo $mysqldate;?>> 
@@ -91,11 +91,12 @@ require("footer.php");
 <script>
 	$(document).ready(function(){
 		
+
+		$("textarea").likeaboss();
 		$("#title").val(localStorage.getItem("title_val"));
 		$("#tags").val(localStorage.getItem("description_val"));
 		$("#text").val(localStorage.getItem("textarea_val"));
-		$("textarea").likeaboss();
-		
+
 		var textarea = $('#text');
 		var preview = $('#fake_textarea');
 
@@ -107,7 +108,7 @@ require("footer.php");
 		});
 
 		$('#text_label').on('click', function(){
-			console.log(localStorage.getItem("title_val"));
+			console.log(localStorage.getItem("textarea_val"));
 			preview.hide();
 			textarea.show();
 		});
@@ -116,8 +117,7 @@ require("footer.php");
 			nameoffile = $(this).val().replace(/^.*\\/, "");
 			console.log(nameoffile);
 			var imageURL = "![An Image](/political_mailing/images/"+nameoffile+")";
-			textarea.val(textarea.val() +"\n"+ imageURL);
-			console.log(localStorage.length);		
+			textarea.val(textarea.val() +"\n"+ imageURL);	
 			localStorage.setItem("textarea_val", $('#text').val());
 			localStorage.setItem("title_val", $('#title').val());
 			localStorage.setItem("description_val",$('#tags').val());

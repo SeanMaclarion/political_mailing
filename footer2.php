@@ -25,7 +25,7 @@
 </div>
     </div>                 
 <!--Div for google maps styling -->
-<div id="googlemaps"></div>
+<!-- <div id="googlemaps"></div> -->
 
 <!--Contact form div-->
 <div class="contact">

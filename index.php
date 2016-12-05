@@ -17,50 +17,48 @@ $feed->init();
 $feed->handle_content_type();
 
 ?>
-
-<!--Google Analytics Script-->
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-87612942-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
-
-<head>
-
-<!--Meta Tags for SEO-->
-<title>Political Mailing by Cornerstone</title>
-<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
-
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="copyright" content="2016, Cornerstone Services">
-<meta name="description" content="Website for Political Mailing by Cornerstone Services.">
-<meta name="keywords" content="direct mail, political mail, campaign mail, fundraising mail">
-<meta name="robots" content="index, follow" />
-
-<!--Stylesheets-->
-<link rel="stylesheet" type="text/css" href="style.css">
-<link rel="stylesheet" type="text/css" href="calander.css">
-<link href="themes/1/js-image-slider.css" rel="stylesheet" type="text/css" />
-
-<!-- js for Slideshow header -->
- <script src="themes/1/js-image-slider.js" type="text/javascript"></script> 
-</head>
 <!--Logo redirects here-->
 <A NAME="home"></a>
 
-<!--Slideshow Header-->
-    <div id="sliderFrame">
-        <div id="slider">
-            <img src="images/testheader.jpg"/>
-            <img src="images/testheader2.jpg"/>
-            <img src="images/testheader3.jpg"/>
-        </div>
-		</div>
+<div id="content-1" class="content-slide"><div id="vslides_wrapper">
+	<div id="vslides">
+							<div class="vslide" id="vslide0" rel="0">
+				<div class="layer"></div>
+				<div class="overlayer"><h2><strong>Amazing Results</strong></h2>
+<h3>Our strategies get the results you are looking for.</h3>
+<!--HubSpot Call-to-Action Code -->
+        <!--[if lte IE 8]><div id="hs-cta-ie-element"></div><![endif]-->
+       
+    </span>
+    <script charset="utf-8" src="https://js.hscta.net/cta/current.js"></script>
+    <script type="text/javascript">
+        hbspt.cta.load(471763, '4d06d532-95fe-4bec-9bfc-99f74d4060f3');
+    </script>
+</span>
+<!-- end HubSpot Call-to-Action Code --></div>
+				<video controls autoplay loop><source src="images/gdvideo.mp4" type="video/mp4"></video>
+			</div>
+			
+			<div class="vslide active" id="vslide1" rel="1">
+				<div class="layer"></div>
+				<div class="overlayer"><h2><strong>Amazing Results</strong></h2>
+<h3>Our strategies get the results you are looking for.</h3>
+<!--HubSpot Call-to-Action Code -->
+        <!--[if lte IE 8]><div id="hs-cta-ie-element"></div><![endif]-->
+       
+    </span>
+    <script charset="utf-8" src="https://js.hscta.net/cta/current.js"></script>
+    <script type="text/javascript">
+        hbspt.cta.load(471763, '4d06d532-95fe-4bec-9bfc-99f74d4060f3');
+    </script>
+</span>
+<!-- end HubSpot Call-to-Action Code --></div>
+				<video controls autoplay loop><source src="images/votingvideo.mp4" type="video/mp4"></video>
+			</div>
+					
+</div></div>
+
+
 
 
 <!--About Text-->

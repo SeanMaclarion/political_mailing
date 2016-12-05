@@ -21,9 +21,9 @@ date_default_timezone_set('America/New_York');
 
 <form action="add_post.php" method="POST" enctype="multipart/form-data">
 Post Title: <br> <!--sets title for post -->
-<input type="text" id="title" name="postTitle" value="adsads"><br>
+<input type="text" name="postTitle" value="adsads"><br>
 <br>
-Post Image Upload:<br> <!--sets header image-->
+Post Image Upload: (Max is 1920 x 1080)<br> <!--sets header image-->
 <input required id = "file" type="file" NAME="file"><br>
 <br>
 Post Content:<br> <!-- sets post content -->
@@ -37,7 +37,7 @@ Post Content:<br> <!-- sets post content -->
 <div id='fake_textarea' name = 'fake_textarea' contenteditable = "true" style="display: none;"></div>
 <br>
 Tag Post *Seperated by commas*<br> <!-- sets tags for post -->
-<textarea placeholder="Type your tags here"rows="1" id="tags" cols="50" name="postTags"></textarea><br><br>
+<textarea placeholder="Type your tags here"rows="1" cols="50" name="postTags"></textarea><br><br>
 
 <?php
 $timestamp = time(); //creates time variable
@@ -63,12 +63,19 @@ $sidebarYear= date('y', $timestamp); //sets year for sorting purposes
 			      $name = $_FILES["file"]["name"];
 			      $tmp_name = $_FILES['file']['tmp_name'];
 			      $error = $_FILES['file']['error'];
-			      if (!empty($name)) {
+				  $image_info = getimagesize($_FILES["file"]["tmp_name"]);
+					$image_width = $image_info[0];
+					$image_height = $image_info[1];
+				  if ($image_width > 800 || $image_height > 400)
+				  {
+					 //don't upload
+				  }
+			      else if (!empty($name))
+				  {
 			          $location = 'C:\xampp\htdocs\political_mailing\images/';
 			          move_uploaded_file($tmp_name, $location.$name);
-			      } else {
-			          echo 'please choose a file';
-			      }
+			      } 
+				 
 			  }
 
 			?>" method = "POST" enctype="multipart/form-data">
@@ -83,6 +90,11 @@ require("footer.php");
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 <script src="likeaboss.js" type="text/javascript"></script>
 <script type="text/javascript" src="micromarkdown.js"></script>
+<script type="text/javascript">
+    function show_error() {
+       alert('File failed to upload: Max Image size: 800x400');     
+    }
+</script>
 <script>
 	$(document).ready(function(){
 		$("#title").val(localStorage.getItem("title_val"));
@@ -109,7 +121,7 @@ require("footer.php");
 			nameoffile = $(this).val().replace(/^.*\\/, "");
 			console.log(nameoffile);
 			var imageURL = "![An Image](/political_mailing/images/"+nameoffile+")";
-			textarea.val(textarea.val() +"\n"+ imageURL);
+				textarea.val(textarea.val() +"\n"+ imageURL);
 
 			localStorage.setItem("textarea_val", $('#text').val());
 			localStorage.setItem("title_val", $('#title').val());
