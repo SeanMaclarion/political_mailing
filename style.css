@@ -1,3 +1,524 @@
+<<<<<<< HEAD
+
+body
+{
+	margin: 0 !important;
+}
+
+.wrapper {
+
+  text-align: center;
+}
+
+/*This is the features blocks*/ 
+/* Sweep To Bottom */
+.hvr-sweep-to-bottomDATA {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+
+.hvr-sweep-to-bottomDATA:before {
+content: "DATA";
+	font-weight: bold;
+	font-size:25px;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #f5f5f5;
+  -webkit-transform: scaleY(0);
+  transform: scaleY(0);
+  -webkit-transform-origin: 50% 0;
+  transform-origin: 50% 0;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+  
+}
+.hvr-sweep-to-bottomDATA:hover, .hvr-sweep-to-bottomDATA:focus, .hvr-sweep-to-bottomDATA:active {
+  color: black;
+}
+.hvr-sweep-to-bottomDATA:hover:before, .hvr-sweep-to-bottomDATA:focus:before, .hvr-sweep-to-bottomDATA:active:before {
+  -webkit-transform: scaleY(1);
+  transform: scaleY(1);
+}
+
+/* Sweep To Bottom */
+.hvr-sweep-to-bottomGRAPHICS {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+
+.hvr-sweep-to-bottomGRAPHICS:before {
+content: "GRAPHICS";
+	font-weight: bold;
+	font-size:25px;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #f5f5f5;
+  -webkit-transform: scaleY(0);
+  transform: scaleY(0);
+  -webkit-transform-origin: 50% 0;
+  transform-origin: 50% 0;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+  
+}
+.hvr-sweep-to-bottomGRAPHICS:hover, .hvr-sweep-to-bottomGRAPHICS:focus, .hvr-sweep-to-bottomGRAPHICS:active {
+  color: BLACK;
+}
+.hvr-sweep-to-bottomGRAPHICS:hover:before, .hvr-sweep-to-bottomGRAPHICS:focus:before, .hvr-sweep-to-bottomGRAPICS:active:before {
+  -webkit-transform: scaleY(1);
+  transform: scaleY(1);
+}
+
+/* Sweep To Bottom */
+.hvr-sweep-to-bottomSTRATEGY {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+
+.hvr-sweep-to-bottomSTRATEGY:before {
+content: "STRATEGY";
+	font-weight: bold;
+	font-size:25px;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #f5f5f5;
+  -webkit-transform: scaleY(0);
+  transform: scaleY(0);
+  -webkit-transform-origin: 50% 0;
+  transform-origin: 50% 0;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+  
+}
+.hvr-sweep-to-bottomSTRATEGY:hover, .hvr-sweep-to-bottomSTRATEGY:focus, .hvr-sweep-to-bottomSTRATEGY:active {
+  color: BLACK;
+}
+.hvr-sweep-to-bottomSTRATEGY:hover:before, .hvr-sweep-to-bottomSTRATEGY:focus:before, .hvr-sweep-to-bottomSTRATEGY:active:before {
+  -webkit-transform: scaleY(1);
+  transform: scaleY(1);
+}
+
+/* Sweep To Bottom */
+.hvr-sweep-to-bottomPRINTING {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+
+.hvr-sweep-to-bottomPRINTING:before {
+content: "PRINTING";
+	font-weight: bold;
+	font-size:25px;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #f5f5f5;
+  -webkit-transform: scaleY(0);
+  transform: scaleY(0);
+  -webkit-transform-origin: 50% 0;
+  transform-origin: 50% 0;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+  
+}
+.hvr-sweep-to-bottomPRINTING:hover, .hvr-sweep-to-bottomPRINTING:focus, .hvr-sweep-to-bottomPRINTING:active {
+  color: black;
+}
+.hvr-sweep-to-bottomPRINTING:hover:before, .hvr-sweep-to-bottomPRINTING:focus:before, .hvr-sweep-to-bottomPRINTING:active:before {
+  -webkit-transform: scaleY(1);
+  transform: scaleY(1);
+}
+
+/* Sweep To Bottom */
+.hvr-sweep-to-bottomFUNDRAISING {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+
+.hvr-sweep-to-bottomFUNDRAISING:before {
+content: "FUNDRAISING";
+	font-weight: bold;
+	font-size:25px;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #f5f5f5;
+  -webkit-transform: scaleY(0);
+  transform: scaleY(0);
+  -webkit-transform-origin: 50% 0;
+  transform-origin: 50% 0;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+  
+}
+.hvr-sweep-to-bottomFUNDRAISING:hover, .hvr-sweep-to-bottomFUNDRAISING:focus, .hvr-sweep-to-bottomFUNDRAISING:active {
+  color: black;
+}
+.hvr-sweep-to-bottomFUNDRAISING:hover:before, .hvr-sweep-to-bottomFUNDRAISING:focus:before, .hvr-sweep-to-bottomFUNDRAISING:active:before {
+  -webkit-transform: scaleY(1);
+  transform: scaleY(1);
+}
+
+/* Sweep To Bottom */
+.hvr-sweep-to-bottomMAILING {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+
+.hvr-sweep-to-bottomMAILING:before {
+	content: "MAILING";
+	font-weight: bold;
+	font-size:25px;
+position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #f5f5f5;
+  -webkit-transform: scaleY(0);
+  transform: scaleY(0);
+  -webkit-transform-origin: 50% 0;
+  transform-origin: 50% 0;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+  
+}
+.hvr-sweep-to-bottomMAILING:hover, .hvr-sweep-to-bottomMAILING:focus, .hvr-sweep-to-bottomMAILING:active {
+  color: black;
+}
+.hvr-sweep-to-bottomMAILING:hover:before, .hvr-sweep-to-bottomMAILING:focus:before, .hvr-sweep-to-bottomMAILING:active:before {
+  -webkit-transform: scaleY(1);
+  transform: scaleY(1);
+}
+
+
+
+.social{
+	background:white;
+}
+.heading
+{
+	width: 100%;
+    height: 400px;
+    background-image: url('images/testheader.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/*This is the social area blog*/ 
+ul.blog
+{
+	float:right; width:30%;
+	font-size: 12px;
+	margin-bottom:20px !important;
+		padding: 0;
+}
+.blog1 {
+    display: inline-block;
+	width: 100%;
+	float:right;
+	padding: 0 !important;
+	padding-left:10px;
+
+}
+
+.services, .socialwrap, .newsletter, .blog, .twitter-timeline,.portfolio
+{
+	padding-top:20px;
+	padding-bottom:20px;
+	text-align: center;
+	
+}
+.text
+{
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 40px;
+}
+.blogheader
+{
+	height: 56px;
+	width: 100%;
+	font-size: 27px;
+	background-color:red;
+	border-radius: 5px 5px 0 0;
+}
+
+img.card
+{
+		width: 100%;
+}
+.card {
+	display: inline-block;
+	width:40%;
+	margin:10px;
+	padding: 10px;
+	 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	 background-color:#f5f5f5
+
+
+}
+.services
+{
+	  box-shadow: 4px 4px 8px 8px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+/*this is for the twitter block*/ 
+.twitterWrap
+{
+	float: left;
+	width:45%;
+}
+
+.twitterHead
+{
+	background-color:#26a0d9;
+	float:left;
+	z-index: 100;
+	display: inline-block;
+	width: 100%;
+	margin-left:10px;
+	padding-top:20px;
+	text-align: left;
+	border-radius: 10px 10px 0 0;
+	color: white;
+	font-size:25px;
+	padding-left:8px;
+
+}
+
+.twitterBody
+{
+	background-color:#67aeeb;
+	height: 470px;
+	margin-left: 10px;
+		border-radius: 10px 10px 10px 10px;
+		padding-top:70px;
+		z-index:0;
+	width: 100%;
+}
+
+/*social blog block*/ 
+
+.blogWrap
+{
+	width: 50%;
+	height:620px;
+	float: right;
+	margin: 0 !important;
+	background-color: #76ac31;
+	padding: 0;
+	border-radius: 10px 10px 10px 10px;
+	
+}
+
+.blogHead
+{
+	background-color:#609823;
+	float:right;
+	z-index: 100;
+	display: inline-block;
+	margin-left:10px;
+	padding-top:36px;
+	padding-bottom:36px;
+	text-align: left;
+	border-radius: 10px 10px 0 0;
+	color: white;
+	font-size:25px;
+	width: 100%;
+
+}
+
+.blogBody
+{
+	
+	height: 700px;
+	margin-left: 10px;
+		border-radius: 10px 10px 10px 10px;
+		padding-top:70px;
+		z-index:0;
+		width: 150%;
+		
+}
+
+.footersocial
+{
+
+	
+}
+#googlemaps { 
+  border-top: 1px solid #9a9072;
+
+  margin-top: 2385px;
+  height: 500px; 
+  width: 100%; 
+  position:absolute; 
+  top: 0; 
+  left: 0; 
+  z-index: -1; /* Set z-index to 0 as it will be on a layer below the contact form */
+}
+
+/* Footer -------------------------------------------------- */
+footer {margin-top:650px;}
+footer .footer-top { padding:52px 0px; background-image:url(images/mid-bar.jpg);}
+footer .footer-top ul {margin-left:350px;}
+footer .footer-top ul li {display:inline-block; padding:0px 5px; }
+footer .footer-top ul li a { height:80px; width:80px; display:block; transition:all ease .3s; }
+footer .footer-top ul li a.fb { background:url(images/fb.png) no-repeat;background-size:cover; }
+footer .footer-top ul li a.twiter { background:url(images/twiter.png) no-repeat;background-size:cover; }
+footer .footer-top ul li a.rss { background:url(images/rs.png) no-repeat;background-size:cover; }
+footer .footer-top ul li a.linkedin { background:url(images/li.jpg) no-repeat;background-size:cover; }
+footer .footer-top ul li a.fb:hover { background:url(images/fb-hover.png) no-repeat;background-size:cover; }
+footer .footer-top ul li a.twiter:hover { background:url(images/twiter-hover.png) no-repeat;background-size:cover; }
+footer .footer-top ul li a.rss:hover { background:url(images/rs-hover.png) no-repeat;background-size:cover; }
+footer .footer-top ul li a.linkedin:hover { background:url(images/li-hover.jpg) no-repeat;background-size:cover; }
+footer .footer-bottom { background:#1e2c3b; padding:50px 0px; margin-top:700px;}
+footer .footer-bottom p { font-size:14px; line-height:16px; color:#2e5266;font-family: 'Montserrat', sans-serif; text-transform:uppercase; text-align:center; }
+footer .footer-bottom p a { color:#2e5266; text-decoration:none;  }
+footer .footer-bottom p a:hover { color:#fff; }
+
+
+
+@media only screen and (min-width: 768px)
+{
+    .bglayer, .sliderInner
+	{
+		
+}
+	}
+	
+	.twitter-timeline
+	{
+		width: 87% !important;
+		margin: 40px;
+	}
+	.timeline-Header
+	{
+		top: 5%;
+	}
+	.blog
+	{
+		width: 40% !important;
+		height: 500px;
+	}
+
+	
+}
+
+
+@media only screen and (max-width: 767px)
+{
+	.twitter-timeline
+	{
+		width: 100% !important;
+	}
+	.blog
+	{
+		width: 100% !important;
+	}
+	
+}
+
+html {
+    min-height:100%;
+}
+
+body {
+    height:100%;
+}
+
+=======
 
 body
 {
@@ -517,3 +1038,4 @@ body {
     height:100%;
 }
 
+>>>>>>> origin/master
